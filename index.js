@@ -7,7 +7,7 @@ const makecommit = n => {
     const x = random.int(0,54);
     const y = random.int(0,6);
     const FILE_PATH = './data.json';
-    const DATE = moment().subtract(2, 'y').add(1, 'd').add(x, 'w').add(y, 'd').format();
+    const DATE = moment().subtract(1, 'y').add(1, 'd').add(x, 'w').add(y, 'd').format();
     const data = {
         date: DATE
     }
@@ -17,4 +17,4 @@ const makecommit = n => {
      });
 }
 
-makecommit(30);
+makecommit(90000);
